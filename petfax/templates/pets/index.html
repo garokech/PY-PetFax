@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetFax</title>
-    <link rel="stylesheet" href="{{ url_for('styles', filename='style.css') }}">
-</head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head> 
 <body>
     <div class="container">
-        <H1>PetFax</H1>
+        <h1>PetFax</h1>
         <div class="callout">
             We love all kind of animals and we want to make sure they are taken care of.
         </div>
@@ -24,8 +23,10 @@
             {% endfor %}
         </div>
         <div class="callout">
-            I'd wish I knew more about the animals. <a href="/facts/new">Tell me more.</a>
+            I'd wish I knew more about the animals. <a href="/petfax/templates/facts/new.html">Tell me more.</a>
         </div>
     </div>
 </body>
 </html>
+
+
