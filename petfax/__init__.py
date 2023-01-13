@@ -6,6 +6,7 @@ def create_app():
     app.register_blueprint(pet.bp)
     from . import fact
     app.register_blueprint(fact.bp)
+    app.config["TEMPLATES_AUTO_RELOAD"] = True
     @app.route('/')
     def hello(): 
         return 'Hello, PetFax!'
